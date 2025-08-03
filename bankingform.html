@@ -6,69 +6,88 @@
     <title>Banking Form</title>
 </head>
 <body>
-    <div id="title"><marquee behavior="" direction="" scrollamount="30"><h1>Banking Form</h1></marquee></div>
+    <div id="title"><marquee behavior="slide" direction="" loop="1" scrollamount="30"><img class="target-img" src="https://upload.wikimedia.org/wikipedia/commons/8/8d/Reserve_Bank_of_India_logo.svg" height="80" alt=""></marquee></div>
     <style>
         #title{
-            background-color: yellow;
-            text-align: center;
-            padding: auto;
+            background-color: rgb(250, 213, 5);
+        }
+
+        .target-img {
+            display: block;
+            margin: 0 auto;
+            width: 300;
         }
     </style>
-    
-    <form action="">
 
-        <fieldset>
-
-            <legend><h3>Xyz Bank</h3></legend>
-
-            <table border="1" width="1500" cellspacing="10" cellpadding="10">
-
-                <tr>
-                    <th colspan="2">Xyz Bank Account Application</th>
+        <form action="">
+            
+            <fieldset>
+                
+                <legend><h3>Application Form</h3></legend>
+                
+                <table border="1" align="center" width="1450" cellspacing="10" cellpadding="10">
+                    
+                    <tr>
+                        <th colspan="2"><u>Reserve Bank Account Application</u></th>
                 </tr>
-
+                
                 <tr>
-                    <td><label for="1">Full Name(as per ID proof)</label></td>
-                    <td><input type="text" name="name" id="1" placeholder="enter name"></td>
+                    <td><label for="1">1.Full Name(as per ID proof)</label></td>
+                    <td><input type="text" name="name" id="1" placeholder="enter name" required></td>
                 </tr>
 
                  <tr>
-                    <td><label for="2">Date of birth</label></td>
-                    <td><input type="date" name="dob" id="2" placeholder="enter DOB"></td>
-                </tr>
-
-                 <tr>
-                    <td><label for="">Gender</label></td>
-                    <td>
-                        <label for="3.1">Male</label>
-                        <input type="radio" name="Gender" id="3.1" value="male">
-                        <label for="3.2">female</label>
-                        <input type="radio" name="Gender" id="3.2" value="female">
-                    </td>
-                </tr>
+                     <td><label for="2">2.Date of birth</label></td>
+                     <td><input type="date" name="dob" id="2" placeholder="enter DOB"></td>
+                    </tr>
+                    
+                    <tr>
+                        <td><label for="">3.Gender</label></td>
+                        <td>
+                            <label for="3.1">Male</label>
+                            <input type="radio" name="Gender" id="3.1" value="male">
+                            <label for="3.2">female</label>
+                            <input type="radio" name="Gender" id="3.2" value="female">
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td><label for="4">4.Martial Status</label></td>
+                        <td><input type="text" name="Martial_Status" id="4" placeholder="enter martial status"></td>
+                    </tr>
 
                 <tr>
-                    <td><label for="4">Martial Status</label></td>
-                    <td><input type="text" name="Martial_Status" id="4" placeholder="enter martial status"></td>
-                </tr>
-
-                <tr>
-                    <td><label for="">Nationality</label></td>
+                    <td><label for="">5.Nationality</label></td>
                     <td><input type="text" value="India" readonly></td>
                 </tr>
-
+                
                 <tr>
-                    <td><label for="">Father's Name</label></td>
+                    <td><label for="">6.Father's Name</label></td>
                     <td><input type="text" name="father_name" id="5" placeholder="enter father's name"></td>
                 </tr>
-
+                
                  <tr>
-                    <td><label for="6">Mother's Name</label></td>
-                    <td><input type="text" name="mother_name" id="6" placeholder="enter mother's name"></td>
+                     <td><label for="6">7.Mother's Name</label></td>
+                     <td><input type="text" name="mother_name" id="6" placeholder="enter mother's name"></td>
+                    </tr>
+
+                <tr>
+                    <td><label for=""></label>8.Phone number</td>
+                    <td><input type="tel" name="phone_number" id="7" placeholder="enter ph number" minlength="10" maxlength="10"></td>
                 </tr>
-            </table><br><br>
-            <button type="submit">submit</button>
+                </table><br><br>
+               <div class="button">
+                 <button type="submit">submit</button>
             <button type="reset">reset</button>
+               </div>
+
+               <style>
+                .button{
+                    display: flex;
+                    gap: 15px;
+                    justify-content: center;
+                }
+               </style>
         </fieldset>
     </form>
 </body>
