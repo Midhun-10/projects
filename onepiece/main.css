@@ -1,0 +1,68 @@
+*{
+    text-decoration: none;
+}
+
+.navbar{
+    background: crimson;
+    font-family:'Times New Roman', Times, serif;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.navdiv{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    font-size: 20px;
+    font-weight: bolder;
+    color: white;
+    font-style: italic;
+    text-shadow: -15px 10px 5px black;
+    padding-left: 50px;
+}
+
+.logo>h1::first-letter{
+    font-size: 50px;
+    
+}
+
+li{
+    list-style: none;
+    display: inline-block;
+}
+
+li>a{
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    margin-right: 25px;
+}
+
+li>a:hover{
+    color: black;
+}
+
+button{
+    background-color: black;
+    margin-left: 10px;
+    border-radius: 10px;
+    padding: 10px;
+    width: 90px;
+}
+
+button>a{
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.navbutton:hover{
+    background-color:blue;
+}
+
+.navbutton:active{
+   background-color:green;
+}
