@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.outer {
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.right {
+    height: 100%;
+    flex-basis: 40%;
+    background-color: blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.right>.login {
+    height: 70%;
+    width: 60%;
+    background-color: white;
+    border-radius: 5px;
+    padding: 50px;
+}
+
+.right>.login>h1 {
+    font-size: 35px;
+    letter-spacing: .7px;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+
+.right>.login>p {
+    font-style: italic;
+    letter-spacing: 1px;
+    margin-bottom: 5px;
+}
+
+.right>.login>form>input {
+    display: block;
+    margin: 5px 0px;
+    height: 25px;
+    width: 80%;
+    padding: 5px;
+    border: 2px solid;
+    border-radius: 5px;
+}
+
+.right>.login>form {
+    text-transform: capitalize;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.right>.login>form>button {
+    margin: 10px 70px 10px;
+    height: 30px;
+    width: 70px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+    background-color: gray;
+    color: aliceblue;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.right>.login>form>button:hover {
+    background-color: rgb(162, 162, 162);
+    transform: scale(1.2);
+}
+
+.right>.login>.inner {
+    margin-top: 10px;
+    display: flex;
+    gap: 30px;
+}
+
+.left {
+    width: calc(100vw - 40%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
